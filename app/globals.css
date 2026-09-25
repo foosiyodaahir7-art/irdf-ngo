@@ -47,13 +47,13 @@
 
 :root {
   color-scheme: light;
-  --background: oklch(0.985 0.008 95);
-  --foreground: oklch(0.25 0.045 165);
+  --background: #ffffff;
+  --foreground: #222222;
   --card: oklch(0.985 0.008 95);
   --card-foreground: oklch(0.25 0.045 165);
   --popover: oklch(0.985 0.008 95);
   --popover-foreground: oklch(0.25 0.045 165);
-  --primary: oklch(0.25 0.045 165);
+  --primary: #E76F24;
   --primary-foreground: oklch(0.985 0.008 95);
   --secondary: oklch(0.94 0.025 150);
   --secondary-foreground: oklch(0.25 0.045 165);
@@ -64,7 +64,7 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.89 0.025 150);
   --input: oklch(0.89 0.025 150);
-  --ring: oklch(0.65 0.15 35); 
+  --ring: #E76F24; 
   --chart-1: oklch(0.7 0.14 35);
   --chart-2: oklch(0.55 0.09 165);
   --chart-3: oklch(0.8 0.15 90);
@@ -85,14 +85,14 @@
 @layer base {
   body { font-family: Arial, Helvetica, sans-serif; }
   a { transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
-  ::selection { background: #f1c453; color: #19352f; }
+  ::selection { background: #E76F24; color: #19352f; }
 }
 
 @layer components {
-  .eyebrow { @apply text-xs font-semibold tracking-[0.2em] uppercase text-[#e56f51]; }
+  .eyebrow { @apply text-xs font-semibold tracking-[0.2em] uppercase text-[#E76F24]; }
   .section-title { @apply max-w-xl text-4xl leading-[1.05] font-semibold tracking-[-0.04em] sm:text-5xl; }
-  .section-title em { @apply font-serif font-normal text-[#e56f51]; }
-  .footer-heading { @apply text-xs font-semibold tracking-[0.16em] text-[#f1c453] uppercase; }
+  .section-title em { @apply font-serif font-normal text-[#E76F24]; }
+  .footer-heading { @apply text-xs font-semibold tracking-[0.16em] text-[#E76F24] uppercase; }
 }
 
 .dark {

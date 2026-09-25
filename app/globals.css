@@ -93,6 +93,11 @@
   .section-title { @apply max-w-xl text-4xl leading-[1.05] font-semibold tracking-[-0.04em] sm:text-5xl; }
   .section-title em { @apply font-serif font-normal text-[#E76F24]; }
   .footer-heading { @apply text-xs font-semibold tracking-[0.16em] text-[#E76F24] uppercase; }
+  .dark-section-surface { @apply transition-colors duration-300; }
+}
+
+.dark-mode .dark-section-surface {
+  background-color: #151d19 !important;
 }
 
 .dark {

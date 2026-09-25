@@ -140,6 +140,65 @@
 .dark-mode .theme-inverse { background-color: #f6f4ed !important; color: #101513 !important; }
 .dark-mode .theme-input { border-color: #34443d !important; color: #f6f4ed !important; }
 
+/* Keep every text and surface readable when the page toggle enables dark mode. */
+.dark-mode header,
+.dark-mode section:not(#get-involved),
+.dark-mode #contact > div {
+  background-color: #101513 !important;
+  color: #f6f4ed;
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode span,
+.dark-mode a,
+.dark-mode button,
+.dark-mode label {
+  color: inherit;
+}
+.dark-mode section:not(#get-involved) p:not(.eyebrow),
+.dark-mode section:not(#get-involved) .text-\[\#555555\],
+.dark-mode section:not(#get-involved) .text-\[\#222222\] {
+  color: #c4d0ca !important;
+}
+.dark-mode section:not(#get-involved) h1,
+.dark-mode section:not(#get-involved) h2,
+.dark-mode section:not(#get-involved) h3,
+.dark-mode section:not(#get-involved) a,
+.dark-mode section:not(#get-involved) button {
+  color: #f6f4ed;
+}
+.dark-mode section:not(#get-involved) .text-\[\#E76F24\],
+.dark-mode section:not(#get-involved) .eyebrow,
+.dark-mode section:not(#get-involved) em {
+  color: #ff9b59 !important;
+}
+.dark-mode section:not(#get-involved) article {
+  background-color: #202a26 !important;
+  border-color: #34443d;
+}
+.dark-mode #donate {
+  background-color: #202a26 !important;
+  color: #f6f4ed;
+}
+.dark-mode #donate input,
+.dark-mode #donate .text-\[\#555555\] {
+  color: #c4d0ca !important;
+}
+.dark-mode #donate button:not([class*="bg-\\[\\#E76F24\\]"]) {
+  background-color: #f6f4ed;
+  color: #101513;
+}
+.dark-mode .border-\[\#eeeeee\],
+.dark-mode .border-\[\#eeeeee\]\/80 {
+  border-color: #34443d !important;
+}
+.dark-mode .bg-\[\#ffffff\]\/90 {
+  background-color: #202a26 !important;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
     color-scheme: dark;
